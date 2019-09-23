@@ -17,7 +17,7 @@ class SVGObject:
         Function used to form the final svg tag.
         :return: The svg tag
         """
-        
+
         return ''
 
     def get_prefix(self):
@@ -75,7 +75,7 @@ class SVGOpenObject(SVGObject):
         :param svg_index: The index of the item
         """
 
-        if len(self.svg_objects) >= svg_index:
+        if len(self.svg_objects) > svg_index:
             del self.svg_objects[svg_index]
 
     def finalize(self):
