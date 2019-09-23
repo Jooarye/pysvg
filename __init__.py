@@ -110,10 +110,10 @@ if __name__ == '__main__':
         (5, 5), (40, 10), 
         stroke='red', stroke_width=2, fill='white'))
     graphic.add(SVGPolygon(
-        [(5.0, 5.0), (4.0, 1.0), (9.0, 2.0)], 
+        [(5, 5), (4, 1), (9, 2)], 
         fill='red', stroke='black', stroke_width=2))
     graphic.add(SVGLine(
-        (0.0, 0.0), (50.0, 50.0), 
+        (0, 0), (50, 50), 
         stroke='blue', stroke_width=2))
 
     with open('nope.svg', 'w') as f:
