@@ -73,12 +73,8 @@ class SVGCircle(SVGClosedObject):
 
 class SVGRect(SVGClosedObject):
     def __init__(self, pos: (float, float), dim: (float, float), **kwargs):
-        x, y = pos
-        w, h = dim
-        kwargs['x'] = x
-        kwargs['y'] = y
-        kwargs['width'] = w
-        kwargs['height'] = h
+        kwargs['x'], kwargs['y'] = pos
+        kwargs['width'], kwargs['height'] = dim
         super(SVGRect, self).__init__(**kwargs)
 
     def get_prefix(self):
