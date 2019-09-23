@@ -72,7 +72,7 @@ class SVGCircle(SVGClosedObject):
 
 
 class SVGRect(SVGClosedObject):
-    def __init__(self, pos: (float, float), dim: (float, float), **kwargs):
+    def __init__(self, pos: Tuple[float, float], dim: Tuple[float, float], **kwargs):
         kwargs['x'], kwargs['y'] = pos
         kwargs['width'], kwargs['height'] = dim
         super(SVGRect, self).__init__(**kwargs)
